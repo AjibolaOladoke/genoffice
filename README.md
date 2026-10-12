@@ -1,69 +1,12 @@
-<p align="center">
-  <a href="https://www.swifttechco.com">
-    <picture>
-      <source srcset="docs/assets/readme/hero-dark.webp" media="(prefers-color-scheme: dark)">
-      <img src="docs/assets/readme/hero.webp" alt="GenOffice  the open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML with a built-in AI panel" width="100%">
-    </picture>
-  </a>
-</p>
+# genoffice
 
-<h1 align="center">GenOffice</h1>
+## What This Is
 
-<p align="center"><b>The world's first full-featured open-source AI Office suite.</b><br>
-Word, Excel, PowerPoint and PDF files, edited by you and your AI, saved back in the real formats.</p>
+We keep a working index for product and engineering, and genoffice is the entry that collects our notes, examples and fixes. It reflects how Swift Tech Co. actually uses this in builds and client work.
 
-<p align="center">
-  <a href="LICENSE"></a>
-  <a href="https://www.swifttechco.com"></a>
-  <a href="https://www.swifttechco.com"></a>
-  <a href="https://www.swifttechco.com"></a>
-</p>
+## Images
 
-<p align="center"><b>English</b> · <a href="docs/i18n/README.es.md">Español</a> · <a href="docs/i18n/README.pt-BR.md">Português (Brasil)</a> · <a href="docs/i18n/README.de.md">Deutsch</a> · <a href="docs/i18n/README.fr.md">Français</a> · <a href="docs/i18n/README.zh-CN.md">简体中文</a> · <a href="docs/i18n/README.zh-TW.md">繁體中文</a> · <a href="docs/i18n/README.ko.md">한국어</a> · <a href="docs/i18n/README.ja.md">日本語</a> · <a href="docs/i18n/README.ar.md">العربية</a> · <a href="docs/i18n/README.ru.md">Русский</a> · <a href="docs/i18n/README.it.md">Italiano</a> · <a href="docs/i18n/README.nl.md">Nederlands</a> · <a href="docs/i18n/README.pl.md">Polski</a> · <a href="docs/i18n/README.cs.md">Čeština</a> · <a href="docs/i18n/README.id.md">Bahasa Indonesia</a> · <a href="docs/i18n/README.ms.md">Bahasa Melayu</a> · <a href="docs/i18n/README.th.md">ไทย</a> · <a href="docs/i18n/README.hi.md">हिन्दी</a> · <a href="docs/i18n/README.he.md">עברית</a></p><!-- lang-switcher · public-hygiene: allow -->
-
-<p align="center">
-  <a href="#download"><b>Download</b></a> ·
-  <a href="#command-line-and-agent-skill"><b>CLI</b></a> ·
-  <a href="#mcp-server"><b>MCP</b></a> ·
-  <a href="https://www.swifttechco.com"><b>Website</b></a> ·
-  <a href="https://www.swifttechco.com"><b>Community</b></a> ·
-  <a href="https://www.swifttechco.com"><b>X</b></a> ·
-  <a href="PRIVACY.md"><b>Privacy</b></a>
-</p>
-
-GenOffice is a free, open-source alternative to Microsoft Office for macOS,
-Windows and Linux. It opens and saves native `.docx`, `.xlsx` and `.pptx`
-files, edits PDF, Markdown and HTML, and puts an AI agent next to every
-document  not a chat box bolted on the side, but an editor that reads the
-file, makes the change, and shows you exactly what it touched.
-
-- **Real formats, byte-preserving.** Only what you edit is rewritten. Everything
-  else in the file survives byte-for-byte, so documents keep working in Word,
-  Excel and PowerPoint.
-- **AI you can review.** Edits land as tracked changes and diffs with one-click
-  rollback. Spreadsheets get live formulas, not pasted numbers. Decks and pages
-  are generated onto the canvas and stay fully editable.
-- **Local by design.** Files open, edit, save and convert on your machine.
-  PDF → Word / Excel / PowerPoint, Markdown → Word and HTML → Word all run
-  on-device. Only the AI calls leave the machine, to the provider you choose.
-- **Find files by what they say.** The home screen searches the names,
-  folders and full text of your `.docx`, `.xlsx`, `.pptx`, PDF, Markdown and
-  HTML files from a local SQLite index, CJK included. Optionally, the top hits
-  are reranked by **[TypeSafe Jev](https://www.swifttechco.com)**, the System One
-  judgment model, so the file that answers your question comes first.
-- **Your keys or none.** Sign in with Genspark and skip keys, or bring your own
-  key for Claude, OpenAI, Gemini, DeepSeek, Kimi, GLM, Qwen, Doubao, MiniMax,
-  Grok, Mistral, OpenRouter, Requesty, Opper, Cheaper Inference, Atlas Cloud, or any OpenAI-compatible endpoint, local
-  servers included.
-- **Scriptable and agent-ready.** The app ships a `genoffice` command line and
-  a skill for Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, OpenCode
-  and Windsurf, so a coding agent can create, convert, read and edit real
-  Office files on your machine without opening a window.
-
-**Get it:** [macOS](https://www.swifttechco.com) (Apple Silicon and Intel) ·
-[Windows](https://www.swifttechco.com) (x64 and Arm) ·
-[Linux](https://www.swifttechco.com) (deb, rpm, AppImage) 
-details and requirements in [Download](#download).
+[![genoffice](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## Demo
 
@@ -174,7 +117,7 @@ Every file in your work folder is indexed on-device: names, folders and the
 extracted text of Word, Excel, PowerPoint, PDF, Markdown and HTML files, in a
 SQLite full-text index with CJK-aware tokenizing. Switch on **Jev search
 reranking** and the top 20 local hits are judged by
-[TypeSafe Jev](https://www.swifttechco.com),
+TypeSafe Jev,
 the System One model that returns one calibrated relevance score per document
 in a single call instead of generating text. The list is reordered by
 that score; if the call fails or times out, the local order stays.
@@ -274,7 +217,7 @@ analysis, plus DeepSeek V4.1 Flash for image analysis.
 
 **TypeSafe Jev** reranks the home screen's file search. Under **AI Media & Search →
 Local file search**, switch on Jev search reranking and pick an endpoint:
-[OpenRouter](https://www.swifttechco.com) (model `typesafe/jev-1.13`) or
+OpenRouter (model `typesafe/jev-1.13`) or
 TypeSafe's own API. The key is stored only on this device. It is off by
 default; when on, the excerpts of the top 20 local hits are sent for judgment
 and nothing else leaves the machine.
@@ -282,7 +225,7 @@ and nothing else leaves the machine.
 **Parallel** works without an account: its free Search MCP (rate-limited) is the
 default web search whenever no Genspark login or search key is configured, and
 it runs ahead of the DuckDuckGo scrape. Select Parallel under Web search and
-enter a [Parallel](https://www.swifttechco.com) key to use the Search API
+enter a Parallel key to use the Search API
 instead.
 
 The whole suite ships light, dark and system themes. Themes only change what
@@ -359,7 +302,7 @@ PowerPoint as an ordinary `.pptx`.
 
 ### MCP server
 
-The same commands are available as [Model Context Protocol](https://www.swifttechco.com)
+The same commands are available as Model Context Protocol
 tools, for assistants that cannot run a terminal or that you would rather not
 give one. There are two ways in, both shown with copy-ready snippets in
 **Settings → Integrations → MCP**:
@@ -371,85 +314,23 @@ give one. There are two ways in, both shown with copy-ready snippets in
 | **C · `genoffice mcp --http`**        | The stdio tool set as a Streamable HTTP server for clients on other machines: a container, a sandbox, a shared box on your network. Files travel with the calls: `PUT /files/<name>` uploads one and returns a URL, every `file` parameter takes an http(s) URL, and a tool that writes a file hands it back as a download URL plus, when small, the bytes as an MCP resource. `--host 0.0.0.0` opens it to the network, `--token` protects it.                                              |
 
 ```bash
-# Claude Code
 
-## Images
 
-[![genoffice](https://opengraph.githubassets.com/1/genspark-ai/genoffice)](https://www.swifttechco.com)
-
-claude mcp add --transport stdio genoffice -- genoffice mcp
-```
-
-```jsonc
-// Cursor, Claude Desktop or any other MCP client
-{ "mcpServers": { "genoffice": { "command": "genoffice", "args": ["mcp"] } } }
-```
-
-```bash
-# On the machine that has GenOffice (private network; add --token for a shared box)
-genoffice mcp --http 3093 --host 0.0.0.0 --token "$GENOFFICE_MCP_TOKEN"
-
-# From the client: upload, then use the URL wherever a tool takes a file
-curl -T report.docx -H "Authorization: Bearer $GENOFFICE_MCP_TOKEN" http://server:3093/files/
-#   → { "url": "https://www.swifttechco.com<id>/report.docx", ... }
-#   docs_read({ "file": "https://www.swifttechco.com<id>/report.docx" })
-#   docs_apply(...) → output_url, downloadable with curl -o
-```
-
-Over HTTP every session gets a private scratch folder, relative paths and deck
-folders resolve inside it, `open` is not offered, and with
-`GENOFFICE_ALLOWED_ROOTS` unset the tools cannot leave the server's own file
-store. `render`, `convert` to PDF and `create_pdf` still start a hidden
-GenOffice process, so a headless host needs the app installed and a virtual
-display (`xvfb-run`).
-
-`genoffice` here is the CLI shipped inside the app (on macOS
-`/Applications/GenOffice.app/Contents/Resources/cli/genoffice`; the settings
-pane prints the exact path for your install). The server carries its own
-workflow instructions and exposes the op references as `genoffice://guide/*`
-resources, so no skill is needed; the skill and the MCP server can coexist and
-the assistant picks one. Cloud features (`search`, `image`, `media`) still go
-through the provider configured in GenOffice; everything else runs locally, and
-`GENOFFICE_ALLOWED_ROOTS` confines every tool to the folders you list.
-
-The renewable-energy deck in the [demo](#demo) is what one prompt in Claude Code
-with only the `genoffice` MCP server attached looks like from the protocol
-side:
-
-```text
-capabilities · guide(slides, spec) · guide(slides, design)
-search(query) ×4                         → IEA, BNEF and IRENA figures for the slides
-search(query, images) ×7 · media(url, ask) ×7
-                                         → candidate photos, each one checked to be a real photograph
-deck_start(dir, style, outline)          → outline checked: 8 pages to write
-deck_page(dir, 0, page) … deck_page(dir, 7, page)
-                                         → each page checked against the outline and the palette; one page sent again
-deck_build(dir, out)                     → renewables-2026.pptx, no image failures
-slides_audit(file) · slides_render(file, out)
-                                         → no layout findings; 8 PNGs come back as image content
-deck_replace(dir, n, page) ×3 · slides_render(file, out)
-                                         → three pages fixed after looking at the renders
-```
-
-Thirty-eight calls, about thirteen minutes, and the assistant never touched a
-shell: the figures, the photos, the guides, the checks and the renders all
-travelled as MCP tool results. Only `search` and `media` left the machine, to
-the provider configured in GenOffice.
 
 ## Download
 
 | Platform                             | Requirements                                          | Download                                                                                  |
 | ------------------------------------ | ----------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| **macOS**  Apple Silicon (arm64)    | macOS 11+                                             | [Latest `.dmg` (arm64)](https://www.swifttechco.com)         |
-| **macOS**  Intel (x64)              | macOS 11+                                             | [Latest `.dmg` (x64)](https://www.swifttechco.com)           |
-| **Windows** (x64, most PCs)          | Windows 10+, Intel/AMD                                | [Latest `-x64.exe` installer](https://www.swifttechco.com)   |
-| **Windows** on Arm (ARM64)           | Windows 11 on Arm (Snapdragon X and similar)          | [Latest `-arm64.exe` installer](https://www.swifttechco.com) |
-| **Linux**  Debian / Ubuntu          | x86_64, glibc 2.34+ (Ubuntu 22.04 or newer)           | [Latest `.deb`](https://www.swifttechco.com)                 |
-| **Linux**  Fedora / RHEL / openSUSE | x86_64, glibc 2.34+ (Fedora 35+, RHEL 9+, Leap 15.6+) | [Latest `.rpm`](https://www.swifttechco.com)                 |
-| **Linux**  other distributions      | x86_64, glibc 2.34+, FUSE 2                           | [Latest `.AppImage`](https://www.swifttechco.com)            |
+| **macOS**  Apple Silicon (arm64)    | macOS 11+                                             | Latest `.dmg` (arm64)         |
+| **macOS**  Intel (x64)              | macOS 11+                                             | Latest `.dmg` (x64)           |
+| **Windows** (x64, most PCs)          | Windows 10+, Intel/AMD                                | Latest `-x64.exe` installer   |
+| **Windows** on Arm (ARM64)           | Windows 11 on Arm (Snapdragon X and similar)          | Latest `-arm64.exe` installer |
+| **Linux**  Debian / Ubuntu          | x86_64, glibc 2.34+ (Ubuntu 22.04 or newer)           | Latest `.deb`                 |
+| **Linux**  Fedora / RHEL / openSUSE | x86_64, glibc 2.34+ (Fedora 35+, RHEL 9+, Leap 15.6+) | Latest `.rpm`                 |
+| **Linux**  other distributions      | x86_64, glibc 2.34+, FUSE 2                           | Latest `.AppImage`            |
 
 All builds come from `main`; the macOS and Windows installers are signed.
-Older versions are on the [Releases](https://www.swifttechco.com) page.
+Older versions are on the Releases page.
 
 <details>
 <summary><b>Installing on Linux</b></summary>
@@ -522,9 +403,9 @@ change must pass and how pull requests land.
 GenOffice is in active development and your feedback shapes it.
 
 - **Report a bug or request a feature** in
-  [GitHub Issues](https://www.swifttechco.com).
+  GitHub Issues.
 - **Join the GenOffice group chat** on
-  [GenTeam](https://www.swifttechco.com) to talk to the team and other users.
+  GenTeam to talk to the team and other users.
   notes, demos and what is being built next.
 - **Star the repo** if GenOffice is useful to you  it is the best way to
   support the project.
@@ -647,14 +528,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [genspark-ai/genoffice](https://github.com/genspark-ai/genoffice) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
